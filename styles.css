@@ -2,7 +2,36 @@
     width: 50px;
     height: 50px;
     overflow: hidden;
-    justify-content: center;
+    display: inline-block;
+    top: 50%;
+    animation-name: hoveroff;
+    animation-duration: 0.25s;
+}
+@keyframes hoveron {
+    0%  {width: 50px; height: 50px;}
+    100%    {width: 60px; height: 60px;}
+}
+@keyframes hoveroff {
+    0%  {width: 60px; height: 60px;}
+    100%    {width: 50px; height: 50px;}
+}
+.sociallink:hover {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: inline-block;
+    top: 50%;
+    animation-name: hoveron;
+    animation-duration: 0.25s;
+}
+.sociallinkcontainer {
+    height: 70px;
+    text-align: center;
+}
+#pagebanner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 body {
     background-color: rgb(64,0,128);
