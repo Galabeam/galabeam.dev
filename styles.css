@@ -3,7 +3,6 @@
     height: 50px;
     overflow: hidden;
     display: inline-block;
-    top: 50%;
     animation-name: hoveroff;
     animation-duration: 0.25s;
 }
