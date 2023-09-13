@@ -1,16 +1,45 @@
+.topnav {
+    background-color: rgba(64,0,128,128;   
+    overflow: hidden;
+}
+.topnav a {
+    float: right;
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    animation-name: navhoveroff;
+    animation-duration: 0.25s;
+}
+.topnav a:hover {
+    animation-name: navhoveron;
+    animation-duration: 0.25s;
+}
+@keyframes navhoveron {
+    0%  {font-size: 16px;}
+    100%    {font-size: 18px;}
+}
+@keyframes navhoveroff {
+    0%  {font-size: 18px;}
+    100%    {font-size: 16px;}
+}
+.topnav a.active {
+    font-weight: 500;
+}
 .sociallink {
     width: 50px;
     height: 50px;
     overflow: hidden;
     display: inline-block;
-    animation-name: hoveroff;
+    animation-name: socialhoveroff;
     animation-duration: 0.25s;
 }
-@keyframes hoveron {
+@keyframes socialhoveron {
     0%  {width: 50px; height: 50px;}
     100%    {width: 60px; height: 60px;}
 }
-@keyframes hoveroff {
+@keyframes socialhoveroff {
     0%  {width: 60px; height: 60px;}
     100%    {width: 50px; height: 50px;}
 }
