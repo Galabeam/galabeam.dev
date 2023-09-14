@@ -2,6 +2,15 @@
     background-color: rgba(64,0,128,128;   
     overflow: hidden;
 }
+}
+@keyframes navhoveron {
+    0%  {font-size: 16px;}
+    100%    {font-size: 18px;}
+}
+@keyframes navhoveroff {
+    0%  {font-size: 18px;}
+    100%    {font-size: 16px;}
+}
 .topnav a {
     float: right;
     color: rgb(255,255,255);
@@ -15,14 +24,6 @@
 .topnav a:hover {
     animation-name: navhoveron;
     animation-duration: 0.25s;
-}
-@keyframes navhoveron {
-    0%  {font-size: 16px;}
-    100%    {font-size: 18px;}
-}
-@keyframes navhoveroff {
-    0%  {font-size: 18px;}
-    100%    {font-size: 16px;}
 }
 .topnav a.active {
     font-weight: 500;
