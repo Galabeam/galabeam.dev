@@ -1,7 +1,6 @@
 .topnav {
-    background-color: rgba(64,0,128,128;   
+    background-color: rgba(64,0,128,128);   
     overflow: hidden;
-}
 }
 @keyframes navhoveron {
     0%  {font-size: 16px;}
