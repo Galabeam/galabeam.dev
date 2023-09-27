@@ -1,8 +1,16 @@
+body {
+    background-color: rgb(64,0,128);
+    overflow: hidden;
+}
+::selection {
+    background-color: rgba(128,0,255,0.7);
+}
+
 .topnav {
     background-color: rgba(64,0,128,128);   
     overflow: hidden;
+    height: 2em;
 }
-
 .topnav a {
     float: right;
     color: rgb(255,255,255);
@@ -10,15 +18,16 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
-    transition: font-size 0.1;
+    transition: font-size 0.1s;
 }
 .topnav a:hover {
     font-size: 18px;
-    transition: font-size 0.1;
+    transition: font-size 0.1s;
 }
 .topnav a.active {
-    font-weight: 500;
+    font-weight: 1000;
 }
+
 .sociallink {
     width: 50px;
     height: 50px;
@@ -27,7 +36,6 @@
     transition: width 0.1s, height 0.1s;
     padding: 20px;
 }
-
 .sociallink:hover {
     width: 60px;
     height: 60px;
@@ -46,20 +54,54 @@
     vertical-align: middle;
     justify-content: center;
 }
+
+.developmentcontainer {
+    display: flex;
+    width: 100%;
+}
+.sidebysidetext {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.galabeamdevcontainer {
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: center;
+    width: 50%;
+}
+.catbeamstudioscontainer {
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: center;
+    width: 50%;
+}
+
 #pagebanner {
+    background-position: center center;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    opacity: 0.1;
+    
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+    pointer-events: none;
 }
+
 a {
     text-decoration: none;
-}
-body {
-    background-color: rgb(64,0,128);
 }
 h1 {
     text-align: center;
@@ -75,10 +117,23 @@ h2 {
     font-weight: 1000;
     font-size: 40px;
 }
+h3 {
+    text-align: center;
+    color: white;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 20px;
+}
 p {
     text-align: center;
     color: white;
     font-family: roboto;
     font-weight: 500;
     font-size: 40px;
+}
+.textleft {
+    width: 50%;
+}
+.textright {
+    width: 50%;
 }
