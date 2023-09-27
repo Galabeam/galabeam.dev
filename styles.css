@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Sublima";
+    src: url("fnt/Sublima.otf");
+}
+
 body {
     background-color: rgb(64,0,128);
     overflow: hidden;
@@ -106,28 +111,28 @@ a {
 h1 {
     text-align: center;
     color: white;
-    font-family: roboto;
+    font-family: Sublima;
     font-weight: 1000;
     font-size: 80px;
 }
 h2 {
     text-align: center;
     color: white;
-    font-family: roboto;
+    font-family: Sublima;
     font-weight: 1000;
     font-size: 40px;
 }
 h3 {
     text-align: center;
     color: white;
-    font-family: roboto;
+    font-family: Sublima;
     font-weight: 700;
     font-size: 20px;
 }
 p {
     text-align: center;
     color: white;
-    font-family: roboto;
+    font-family: Sublima;
     font-weight: 500;
     font-size: 40px;
 }
