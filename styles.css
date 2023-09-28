@@ -14,7 +14,7 @@ body {
 .topnav {
     background-color: rgba(64,0,128,128);   
     overflow: hidden;
-    height: 2em;
+    height: 40px;
 }
 .topnav a {
     float: right;
