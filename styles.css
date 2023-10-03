@@ -10,6 +10,7 @@
 
 body {
     background-color: rgb(64,0,128);
+    overflow-x: hidden;
 }
 #bg {
     background-position: center center;
@@ -26,7 +27,6 @@ body {
     pointer-events: none;
     z-index: -99;
 }
-
 ::selection {
     background-color: rgba(128,0,255,0.7);
 }
