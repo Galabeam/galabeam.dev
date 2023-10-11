@@ -10,7 +10,7 @@
 
 body {
     background-color: rgb(64,0,128);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #bg {
     background-position: center center;
@@ -50,9 +50,6 @@ body {
 #topnav a:hover {
     font-size: 18px;
     transition: font-size 0.1s;
-}
-#topnav a.active {
-    color: rgb(255,255,255)
 }
 #topnavshadow {
     position: absolute;
@@ -151,6 +148,10 @@ p {
     font-weight: 500;
     font-size: 40px;
 }
+iframe {
+    border: none;
+}
+
 .textleft {
     width: 50%;
 }
