@@ -31,25 +31,51 @@ body {
     background-color: rgba(128,0,255,0.7);
 }
 
-#topnav {
+#naviframe {
     background-color: rgba(128,0,255,0.7);
     height: 3em;
     margin: -8;
     width: 100vw;
 }
-#topnav a {
+#topnav div {
+    margin: 0;
+    float: right;
+    color: rgb(200,200,200);
+    background-color: rgba(128,0,255,0.7);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: unset;
+    text-align: unset;
+    font-family: StretchPro;
+    transition: font-size 0.1s;
+    display: flex;
+    flex-direction: column;
+}
+#topnav a, #topnav p {
+    margin: 0;
     float: right;
     color: rgb(200,200,200);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
+    font-weight: unset;
+    text-align: unset;
     font-family: StretchPro;
     transition: font-size 0.1s;
 }
 #topnav a:hover {
     font-size: 18px;
     transition: font-size 0.1s;
+}
+#topnav div a {
+    font-size: 16px;
+    transition: none;
+}
+#topnav div a:hover {
+    font-size: 16px;
+    transition: none;
 }
 #topnavshadow {
     position: absolute;
