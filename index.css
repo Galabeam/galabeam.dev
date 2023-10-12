@@ -1,3 +1,4 @@
+/*fonts*/
 @font-face {
     font-family: "Sublima";
     src: url("fnt/Sublima.otf");
@@ -7,9 +8,20 @@
     src: url("fnt/StretchPro.otf");
 }
 
+/*animations*/
+@keyframes backgroundloop {
+    0% {
+        background-position: 0, 0, 0, 0;
+    }
+  
+    100% {
+        background-position: 20ex, 0, 0, 0;
+    }
+}
 
 body {
     background-color: rgb(64,0,128);
+    margin: 0;
     overflow: hidden;
 }
 #bg {
@@ -34,11 +46,9 @@ body {
 #naviframe {
     background-color: rgba(128,0,255,0.7);
     height: 3em;
-    margin: -8;
     width: 100vw;
 }
 #topnav div {
-    margin: 0;
     float: right;
     color: rgb(200,200,200);
     background-color: rgba(128,0,255,0.7);
@@ -54,7 +64,6 @@ body {
     z-index: 10;
 }
 #topnav a, #topnav p {
-    margin: 0;
     float: right;
     color: rgb(200,200,200);
     text-align: center;
@@ -178,6 +187,47 @@ p {
 }
 iframe {
     border: none;
+}
+button {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    width: 20ex;
+    height: 2em;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    background: rgba(128,0,255,0.7);
+
+    transition: font-size 0.1s, height 0.1s, background 0.2s;
+}
+button:hover {
+    height: 2.1em;
+    font-size: 25px;
+    background: linear-gradient(90deg, rgba(128,0,255,0.7), rgba(168,40,255,0.7), rgba(128,0,255,0.7));
+    
+    animation: backgroundloop;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    transition: font-size 0.1s, height 0.1s, background 0.2s;
+}
+button:active {
+    background: rgba(168,40,255,0.7);
+
+    transition: font-size 0.1s, height 0.1s, background 0.2s;
+}
+
+#fourOfour {
+    font-size: 200px;
+    letter-spacing: 10vw;
+    text-indent: 10vw;
 }
 
 .textleft {
