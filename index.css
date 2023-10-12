@@ -51,6 +51,7 @@ body {
     transition: font-size 0.1s;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 }
 #topnav a, #topnav p {
     margin: 0;
@@ -72,6 +73,7 @@ body {
 #topnav div a {
     font-size: 16px;
     transition: none;
+    z-index: 10;
 }
 #topnav div a:hover {
     font-size: 16px;
