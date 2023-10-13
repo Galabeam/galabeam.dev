@@ -4,19 +4,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
     })
 
     window.addEventListener('load', function() {
-        document.getElementById("nav" + document.body.id).style.color = "white"
+        if (document.getElementById("nav" + document.body.id) != null) {
+            document.getElementById("nav" + document.body.id).style.color = "white"
+        }
     })
 
-    var url = window.location.href
-    function UrlExists(url) {
-        var http = new XMLHttpRequest()
-        http.open('HEAD', url, false)
-        http.send()
-        if (http.status == 404) {
-            console.log("is thy 404")
-            location.href == (url + ".html")
+    if (document.body.id == "404") {
+        if (location.href.endsWith(".html") != true) {
+            location.href = (location.href + ".html")
         }
     }
-
-    UrlExists(url)
 })
