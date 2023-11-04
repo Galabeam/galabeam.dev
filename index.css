@@ -186,6 +186,23 @@ p {
     font-weight: 500;
     font-size: 40px;
 }
+table {
+    border-collapse: collapse;
+}
+th, td {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    
+}
+.e {
+    border: 0px;
+}
 iframe {
     border: none;
 }
