@@ -104,6 +104,11 @@ body {
     pointer-events: none;
 }
 
+#gbd {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
 #socialsContainer {
     width: 100%;
 }
