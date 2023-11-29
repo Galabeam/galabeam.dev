@@ -6,13 +6,10 @@ const scene = new THREE.Scene()
 const loader = new FBXLoader()
 
 // Custom
-const body = new THREE.MeshStandardMaterial()
-
 let gbd = new THREE.Object3D()
 let gbdobj = null
-loader.load( 'res/galabeam.dev.fbx', function( obj ) {
+loader.load( 'public/galabeam.dev.fbx', function( obj ) {
     gbd = obj.scene
-    obj.material = body
     scene.add( obj )
     gbdobj = obj
 })
