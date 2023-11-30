@@ -1,19 +1,19 @@
 /*fonts*/
 @font-face {
     font-family: "Sublima";
-    src: url("fnt/Sublima.otf");
+    src: url("/fnt/Sublima.otf");
 }
 @font-face {
     font-family: "StretchPro";
-    src: url("fnt/StretchPro.otf");
+    src: url("/fnt/StretchPro.otf");
 }
 @font-face {
     font-family: "OliversBarney";
-    src: url("fnt/OliversBarney.ttf");
+    src: url("/fnt/OliversBarney.ttf");
 }
 @font-face {
     font-family: "Minecraft";
-    src: url("fnt/Minecraft.otf");
+    src: url("/fnt/Minecraft.otf");
 }
 
 /*animations*/
