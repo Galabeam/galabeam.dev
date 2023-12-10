@@ -42,8 +42,9 @@ body {
     background-color: rgb(64,0,128);
     min-height: 100vh;
 }
-::selection {
-    background-color: rgba(0,128,255,0.7)
+::selection, ::-moz-selection {
+    color: rgb(0,128,255);
+    background-color: rgba(128,0,255,0.7)
 }
 .linebreak {
     font-size: 15px;
@@ -58,6 +59,8 @@ body {
     background-color: rgba(128,0,255,0.7);
     height: 3em;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 #topnav div {
     float: right;
@@ -100,11 +103,13 @@ body {
 #topnavshadow {
     position: absolute;
     top: 0;
+    left: -2.5%;
     background-color: rgba(0,0,0,0);
     height: 3em;
-    width: 100%;
+    width: 105%;
     box-shadow: 0 10px 30px rgb(128,0,255);
     pointer-events: none;
+    position: fixed;
 }
 
 #gbd {
@@ -175,10 +180,12 @@ a {
 }
 h1 {
     text-align: center;
-    color: white;
+    color: rgb(0,128,255);
     font-family: Sublima;
     font-weight: 1000;
     font-size: 80px;
+
+    text-shadow: 5px 5px 0 rgb(0,64,128);
 }
 h2 {
     text-align: center;

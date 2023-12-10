@@ -1,9 +1,9 @@
-window.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
     $ (function() {
         $ ("#naviframe").load("/html/navigation.html");
     })
 
-    window.addEventListener('load', function() {
+    document.addEventListener('load', function() {
         if (document.getElementById("nav" + document.body.id) != null) {
             document.getElementById("nav" + document.body.id).style.color = "white"
         }
