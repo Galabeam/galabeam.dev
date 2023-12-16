@@ -279,6 +279,11 @@ button:active {
     width: 50%;
 }
 
+.footer {
+    font-size: 20px;
+    color: #888888;
+}
+
 .gsc {
     width: 98vw;
 }
