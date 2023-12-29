@@ -1,0 +1,205 @@
+/*fonts*/
+@font-face {
+    font-family: "Sublima";
+    src: url("/fonts/Sublima.otf");
+}
+@font-face {
+    font-family: "StretchPro";
+    src: url("/fonts/StretchPro.otf");
+}
+@font-face {
+    font-family: "OliversBarney";
+    src: url("/fonts/OliversBarney.ttf");
+}
+@font-face {
+    font-family: "Minecraft";
+    src: url("/fonts/Minecraft.otf");
+}
+
+/*animations*/
+@keyframes backgroundloop {
+    0% {
+        background-position: 0, 0, 0, 0;
+    }
+  
+    100% {
+        background-position: 20ex, 0, 0, 0;
+    }
+}
+
+* {
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-position: center;
+    background-image: url(img/background.jpg);
+    background-size: contain;*/
+    background-color: rgb(0,0,0);
+    min-height: 100vh;
+}
+::selection, ::-moz-selection {
+    color: rgb(0,128,255);
+    background-color: rgba(128,0,255,0.7)
+}
+.linebreak {
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    border-top: 1px;
+    border-top-style: solid;
+    display: table;
+    width: 100%;
+}
+
+#timeline {
+    position: absolute;
+    height: 900px;
+    width: 100px;
+    top: 75px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 100px;
+}
+.timelinedate {
+    rotate: -90deg;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#l2020-1 {
+    left: 100px;
+}
+#l2020-2 {
+    left: 340px;
+}
+#l2020-3 {
+    left: 580px;
+}
+#l2021-1 {
+    left: 100px;
+    top: 490px;
+}
+#l2021-2 {
+    left: 340px;
+    top: 490px;
+}
+#l2021-3 {
+    left: 580px;
+    top: 490px;
+}
+#l2021-4 {
+    left: 820px;
+    top: 490px;
+}
+#l2022-1 {
+    left: 100px;
+    top: 740px;
+}
+#l2022-2 {
+    left: 340px;
+    top: 740px;
+}
+#l2023 {
+    left: 100px;
+    top: 980px;
+}
+
+a {
+    color: rgb(0,128,255);
+}
+h1 {
+    text-align: center;
+    color: rgb(0,128,255);
+    font-family: Sublima;
+    font-weight: 1000;
+    font-size: 80px;
+
+    text-shadow: 5px 5px 0 rgb(0,64,128);
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 1000;
+    font-size: 40px;
+}
+h3 {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 700;
+    font-size: 20px;
+}
+p {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 500;
+    font-size: 40px;
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    
+}
+.e {
+    border: 0px;
+}
+iframe {
+    border: none;
+}
+button {
+    text-align: center;
+    color: white;
+    font-family: Sublima;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    width: 20ex;
+    height: 2em;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    background: rgba(128,0,255,0.7);
+
+    transition: font-size 0.1s, height 0.1s, background 0.2s;
+}
+button:hover {
+    height: 2.1em;
+    font-size: 25px;
+    background: linear-gradient(90deg, rgba(128,0,255,0.7), rgba(168,40,255,0.7), rgba(128,0,255,0.7));
+    
+    animation: backgroundloop;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    transition: font-size 0.1s, height 0.1s, background 0.2s;
+}
+button:active {
+    background: rgba(168,40,255,0.7);
+
+    transition: font-size 0.1s, height 0.1s, background 0.2s;
+}

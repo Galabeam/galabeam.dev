@@ -55,63 +55,6 @@ body {
     width: 100%;
 }
 
-#naviframe {
-    background-color: rgba(128,0,255,0.7);
-    height: 3em;
-    width: 100%;
-    position: fixed;
-    top: 0;
-}
-#topnav div {
-    float: right;
-    color: rgb(200,200,200);
-    background-color: rgba(128,0,255,0.7);
-    text-align: center;
-    font-size: 16px;
-    font-weight: unset;
-    text-align: unset;
-    font-family: StretchPro;
-    transition: font-size 0.1s;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-}
-#topnav a, #topnav p {
-    float: right;
-    color: rgb(200,200,200);
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 16px;
-    font-weight: unset;
-    text-align: unset;
-    font-family: StretchPro;
-    transition: font-size 0.1s;
-}
-#topnav a:hover {
-    font-size: 18px;
-    transition: font-size 0.1s;
-}
-#topnav div a {
-    font-size: 16px;
-    transition: none;
-    z-index: 10;
-}
-#topnav div a:hover {
-    font-size: 16px;
-    transition: none;
-}
-#topnavshadow {
-    position: absolute;
-    top: 0;
-    left: -2.5%;
-    background-color: rgba(0,0,0,0);
-    height: 3em;
-    width: 105%;
-    box-shadow: 0 10px 30px rgb(128,0,255);
-    pointer-events: none;
-    position: fixed;
-}
-
 #gbd {
     position: absolute;
     left: 10%;
