@@ -8,7 +8,7 @@ const loader = new FBXLoader()
 // Custom
 let gbd = new THREE.Object3D()
 let gbdobj = null
-loader.load( '/3D/galabeam.dev.fbx', function( obj ) {
+loader.load( '/3D/cheese.fbx', function( obj ) {
     gbd = obj.scene
     scene.add( obj )
     gbdobj = obj

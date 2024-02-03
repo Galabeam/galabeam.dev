@@ -39,7 +39,7 @@ body {
     /*background-position: center;
     background-image: url(img/background.jpg);
     background-size: contain;*/
-    background-color: rgb(0,0,0);
+    background-color: #808080;
     min-height: 100vh;
 }
 ::selection, ::-moz-selection {
@@ -57,7 +57,7 @@ body {
 
 #timeline {
     position: absolute;
-    height: 900px;
+    height: 1200px;
     width: 100px;
     top: 75px;
     left: 0%;
@@ -70,49 +70,17 @@ body {
     rotate: -90deg;
 }
 
+:root {
+    --r: 1;
+    --c: 2.4;
+}
 .logo {
     position: absolute;
     width: 200px;
     height: 200px;
+    left: calc(100px * var(--r));
+    top: calc(100px * var(--c));
 }
-#l2020-1 {
-    left: 100px;
-}
-#l2020-2 {
-    left: 340px;
-}
-#l2020-3 {
-    left: 580px;
-}
-#l2021-1 {
-    left: 100px;
-    top: 490px;
-}
-#l2021-2 {
-    left: 340px;
-    top: 490px;
-}
-#l2021-3 {
-    left: 580px;
-    top: 490px;
-}
-#l2021-4 {
-    left: 820px;
-    top: 490px;
-}
-#l2022-1 {
-    left: 100px;
-    top: 740px;
-}
-#l2022-2 {
-    left: 340px;
-    top: 740px;
-}
-#l2023 {
-    left: 100px;
-    top: 980px;
-}
-
 a {
     color: rgb(0,128,255);
 }
@@ -122,6 +90,7 @@ h1 {
     font-family: Sublima;
     font-weight: 1000;
     font-size: 80px;
+    margin-bottom: 0;
 
     text-shadow: 5px 5px 0 rgb(0,64,128);
 }
