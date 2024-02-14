@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     $ (function() {
         $ ("#naviframe").load("/html/navigation.html");
+        $ ("head").load("/html/gh.html");
     })
 
     document.addEventListener('load', function() {
