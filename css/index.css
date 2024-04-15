@@ -36,10 +36,7 @@ html, body {
     padding: 0;
 }
 body {
-    /*background-position: center;
-    background-image: url(img/background.jpg);
-    background-size: contain;*/
-    background-color: rgb(64,0,128);
+    background-color: rgb(10,10,10);
     min-height: 100vh;
 }
 ::selection, ::-moz-selection {
