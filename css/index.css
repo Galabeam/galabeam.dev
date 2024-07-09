@@ -282,21 +282,25 @@ button:active {
 
     transition: color 0.5s, text-shadow 0.5s;
 }
-#SCPSLlink {
-    font-family: "OliversBarney";
+#gaming {
+    font-family: "Sublima";
     color: rgba(128,0,0,1);
     text-shadow: 0 0 10px rgba(100,0,0,1);
 }
-#SCPSLlink:hover {
+#gaming:hover {
     color: rgba(255,0,0,1);
     text-shadow: 0 0 20px rgba(255,0,0,1);
 }
-#MClink {
-    font-family: "Minecraft";
-    color: rgba(0,128,32,1);
-    text-shadow: 0 0 20px rgba(0,64,16,1);
+.gamediv {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 350px 1fr;
+    grid-gap: 20px;
 }
-#MClink:hover {
-    color: rgb(0,255,64);
-    text-shadow: 0 0 20px rgba(0,255,64,1);
+.gameelements {
+    font-size: 20px;
+    text-align: left;
+    grid-row: 1/5;
 }
