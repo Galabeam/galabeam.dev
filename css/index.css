@@ -291,6 +291,7 @@ button:active {
     color: rgba(255,0,0,1);
     text-shadow: 0 0 20px rgba(255,0,0,1);
 }
+
 .gamediv {
     padding-left: 25px;
     padding-right: 25px;
@@ -302,5 +303,5 @@ button:active {
 .gameelements {
     font-size: 20px;
     text-align: left;
-    grid-row: 1/5;
+    grid-row: 1/3;
 }
