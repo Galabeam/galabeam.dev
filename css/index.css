@@ -129,17 +129,21 @@ h1 {
 }
 h2 {
     text-align: center;
-    color: white;
+    color: rgb(128,0,255);
     font-family: Sublima;
     font-weight: 1000;
     font-size: 40px;
+
+    text-shadow: 4px 4px 0 rgb(64,0,128);
 }
 h3 {
     text-align: center;
-    color: white;
+    color: rgb(255,128,0);
     font-family: Sublima;
     font-weight: 700;
     font-size: 20px;
+
+    text-shadow: 2px 2px 0 rgb(128,64,0);
 }
 p {
     text-align: center;
@@ -308,4 +312,11 @@ button:active {
 .glow {
     box-shadow: 0px 0px 20px #f6ba00;
     z-index: 10;
+}
+.h1small {
+    font-size: 30px;
+    text-shadow: 2px 2px 0 rgb(0,64,128);
+}
+.h1fix {
+    line-height: 80px;
 }
