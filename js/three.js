@@ -6,18 +6,18 @@ const scene = new THREE.Scene()
 const loader = new FBXLoader()
 
 // Custom
-let gbd = new THREE.Object3D()
-let gbdobj = null
-loader.load( '/3D/galabeam.dev.fbx', function( obj ) {
-    gbd = obj.scene
+let cheese = new THREE.Object3D()
+let cheeseobj = null
+loader.load( '/3D/cheese.fbx', function( obj ) {
+    cheese = obj.scene
     scene.add( obj )
-    gbdobj = obj
+    cheeseobj = obj
 })
 
 // Renderer
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(400,200)
-renderer.domElement.id = "gbd"
+renderer.domElement.id = "cheese3d"
 renderer.setClearColor( 0xffffff, 0);
 document.body.appendChild(renderer.domElement)
 
@@ -36,8 +36,8 @@ scene.add( light )
 const animate = () => {
     requestAnimationFrame(animate);
 
-    if (gbdobj != null) {
-        gbdobj.rotation.y += 0.01
+    if (cheeseobj != null) {
+        cheeseobj.rotation.y += 0.01
     }
 
     controls.update()
